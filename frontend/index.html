@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://fav.farm/😎" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/assets/scss/style.scss" />
+    <title>Kill The Virus</title>
+  </head>
+
+  <body>
+    <div
+      id="app"
+      class="d-flex flex-column justify-content-center align-items-center vh-100"
+    >
+      <h1 class="display-4 text-center">Kill The Virus</h1>
+
+      <form id="user-form" class="custom-width">
+        <div class="form-group my-2">
+          <label class="mb-3" for="username">Enter your username:</label>
+          <input
+            placeholder="virus killer"
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            required
+          />
+        </div>
+        <button
+          id="start-game-button"
+          type="submit"
+          class="btn btn-info btn-block my-2"
+        >
+          Start Game
+        </button>
+      </form>
+
+      <div class="flex gap-4 d-none" id="canvas_parent">
+        <div
+          class="position-relative bg-black border border-info rounded"
+          id="canvas"
+        ></div>
+        <div class="oposition_details border-info rounded border pt-5 px-2">
+          <p class="font-weight-bold mb-4">Score Board</p>
+          <p>
+            <span id="my_iteration">0</span> - <span id="opp_iteration">0</span>
+          </p>
+          <hr />
+          <p class="mt-5 mb-2">You : <span id="my_time">0:00</span></p>
+          <hr />
+          <p class="mt-5 mb-2">
+            <span id="opp_name"></span>: <span id="opp_time">0:00</span>
+          </p>
+        </div>
+      </div>
+      <div id="welcome-message"></div>
+      <div id="waiting-lobby"></div>
+      <div id="game-on"></div>
+      <div id="start-view"></div>
+      <div id="canvas-border"></div>
+      <div id="messages"></div>
+      <div id="score-board"></div>
+      <div id="fastest-player"></div>
+      <div
+        id="game-results"
+        class="border border-info font-weight-bold px-4 py-2 rounded text-bg-warning d-none mt-2"
+      ></div>
+      <h1 id="ten-latest" class="d-none">Last 10 Matches</h1>
+      <button class="d-none" id="exitgame">Exit Game</button>
+      <div id="game-result"></div>
+      <div
+        class="flex p-2 flex-wrap gap-5 overflow-auto justify-content-around"
+        id="show-latest-ten-matches"
+      ></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

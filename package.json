@@ -1,0 +1,14 @@
+{
+  "name": "fed23-api-virus",
+  "version": "1.0.0",
+  "description": "FED23 API Virus",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd frontend && npm install --include=dev && cd ../backend && npm install --include=dev",
+    "build": "cd frontend && npm run build && cd ../backend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

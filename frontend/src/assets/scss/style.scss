@@ -1,0 +1,39 @@
+@import "bootstrap/scss/bootstrap";
+
+#app {
+  background-color: black;
+  min-height: 100vh;
+  padding: 20px 35px;
+  color: whitesmoke;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.custom-width {
+  max-width: 40rem;
+}
+.flex {
+  display: flex;
+}
+
+#canvas {
+  width: 70vw;
+  height: 80vh;
+  margin: 0 auto;
+}
+.oposition_details {
+  width: 20vw;
+}
+
+.virus-image {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  background-size: contain;
+}
+
+hr {
+  color: #0dcaf0;
+}
